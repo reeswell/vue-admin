@@ -1,0 +1,275 @@
+/* Element Plus 全局样式覆盖 */
+
+/* 表格样式 */
+.el-table {
+  --el-table-border-color: var(--el-border-color-lighter);
+  --el-table-border: 1px solid var(--el-border-color-lighter);
+  --el-table-text-color: var(--el-text-color-regular);
+  --el-table-header-text-color: var(--el-text-color-primary);
+  --el-table-header-bg-color: var(--el-fill-color-light);
+  --el-table-row-hover-bg-color: var(--el-fill-color-lighter);
+  --el-table-current-row-bg-color: var(--el-color-primary-light-9);
+  --el-table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --el-table-bg-color: var(--el-bg-color);
+  --el-table-tr-bg-color: var(--el-bg-color);
+  --el-table--striped-bg-color: var(--el-fill-color-light);
+}
+
+/* 表单样式 */
+.el-form-item__label {
+  color: var(--el-text-color-primary);
+}
+
+.el-input__wrapper {
+  background-color: var(--el-bg-color);
+  border-color: var(--el-border-color);
+}
+
+.el-input__wrapper:hover {
+  border-color: var(--el-color-primary);
+}
+
+.el-input__wrapper.is-focus {
+  border-color: var(--el-color-primary);
+}
+
+/* 按钮样式 */
+.el-button {
+  border-color: var(--el-border-color);
+}
+
+.el-button--primary {
+  background-color: var(--el-color-primary);
+  border-color: var(--el-color-primary);
+}
+
+.el-button--primary:hover {
+  background-color: var(--el-color-primary-light-3);
+  border-color: var(--el-color-primary-light-3);
+}
+
+.el-button--success {
+  background-color: var(--el-color-success);
+  border-color: var(--el-color-success);
+}
+
+.el-button--success:hover {
+  background-color: var(--el-color-success-light-3);
+  border-color: var(--el-color-success-light-3);
+}
+
+.el-button--warning {
+  background-color: var(--el-color-warning);
+  border-color: var(--el-color-warning);
+}
+
+.el-button--warning:hover {
+  background-color: var(--el-color-warning-light-3);
+  border-color: var(--el-color-warning-light-3);
+}
+
+.el-button--danger {
+  background-color: var(--el-color-danger);
+  border-color: var(--el-color-danger);
+}
+
+.el-button--danger:hover {
+  background-color: var(--el-color-danger-light-3);
+  border-color: var(--el-color-danger-light-3);
+}
+
+/* 下拉菜单样式 */
+.el-dropdown-menu {
+  background-color: var(--el-bg-color-overlay);
+  border-color: var(--el-border-color-light);
+}
+
+.el-dropdown-menu__item {
+  color: var(--el-text-color-regular);
+}
+
+.el-dropdown-menu__item:hover {
+  background-color: var(--el-fill-color-light);
+  color: var(--el-color-primary);
+}
+
+/* 分页样式 */
+.el-pagination {
+  --el-pagination-button-bg-color: var(--el-bg-color);
+  --el-pagination-hover-color: var(--el-color-primary);
+}
+
+.el-pagination .el-pagination__total {
+  color: var(--el-text-color-regular);
+}
+
+.el-pagination .btn-prev,
+.el-pagination .btn-next {
+  background-color: var(--el-bg-color);
+  color: var(--el-text-color-regular);
+}
+
+.el-pagination .btn-prev:hover,
+.el-pagination .btn-next:hover {
+  color: var(--el-color-primary);
+}
+
+.el-pagination .el-pager li {
+  background-color: var(--el-bg-color);
+  color: var(--el-text-color-regular);
+}
+
+.el-pagination .el-pager li.active {
+  background-color: var(--el-color-primary);
+  color: white;
+}
+
+.el-pagination .el-pager li:hover {
+  color: var(--el-color-primary);
+}
+
+/* 对话框样式 */
+.el-dialog {
+  background-color: var(--el-bg-color);
+  border-color: var(--el-border-color-light);
+}
+
+.el-dialog__header {
+  border-bottom-color: var(--el-border-color-lighter);
+}
+
+.el-dialog__title {
+  color: var(--el-text-color-primary);
+}
+
+/* 选择器样式 */
+.el-select-dropdown {
+  background-color: var(--el-bg-color-overlay);
+  border-color: var(--el-border-color-light);
+}
+
+.el-select-dropdown__item {
+  color: var(--el-text-color-regular);
+}
+
+.el-select-dropdown__item:hover {
+  background-color: var(--el-fill-color-light);
+  color: var(--el-color-primary);
+}
+
+.el-select-dropdown__item.selected {
+  background-color: var(--el-color-primary-light-9);
+  color: var(--el-color-primary);
+}
+
+/* 日期选择器样式 */
+.el-date-picker {
+  background-color: var(--el-bg-color-overlay);
+  border-color: var(--el-border-color-light);
+}
+
+.el-date-picker__header {
+  border-bottom-color: var(--el-border-color-lighter);
+}
+
+.el-date-picker__header-label {
+  color: var(--el-text-color-primary);
+}
+
+.el-date-table th {
+  color: var(--el-text-color-regular);
+}
+
+.el-date-table td {
+  color: var(--el-text-color-regular);
+}
+
+.el-date-table td.available:hover {
+  color: var(--el-color-primary);
+}
+
+.el-date-table td.current {
+  background-color: var(--el-color-primary);
+  color: white;
+}
+
+/* 开关样式 */
+.el-switch__core {
+  border-color: var(--el-border-color);
+}
+
+.el-switch.is-checked .el-switch__core {
+  background-color: var(--el-color-primary);
+  border-color: var(--el-color-primary);
+}
+
+/* 标签样式 */
+.el-tag {
+  background-color: var(--el-fill-color-light);
+  border-color: var(--el-border-color-light);
+  color: var(--el-text-color-regular);
+}
+
+.el-tag--primary {
+  background-color: var(--el-color-primary-light-9);
+  border-color: var(--el-color-primary-light-7);
+  color: var(--el-color-primary);
+}
+
+.el-tag--success {
+  background-color: var(--el-color-success-light-9);
+  border-color: var(--el-color-success-light-7);
+  color: var(--el-color-success);
+}
+
+.el-tag--warning {
+  background-color: var(--el-color-warning-light-9);
+  border-color: var(--el-color-warning-light-7);
+  color: var(--el-color-warning);
+}
+
+.el-tag--danger {
+  background-color: var(--el-color-danger-light-9);
+  border-color: var(--el-color-danger-light-7);
+  color: var(--el-color-danger);
+}
+
+.el-tag--info {
+  background-color: var(--el-color-info-light-9);
+  border-color: var(--el-color-info-light-7);
+  color: var(--el-color-info);
+}
+
+/* 消息样式 */
+.el-message {
+  background-color: var(--el-bg-color-overlay);
+  border-color: var(--el-border-color-light);
+}
+
+.el-message__content {
+  color: var(--el-text-color-primary);
+}
+
+/* 加载样式 */
+.el-loading-mask {
+  background-color: var(--el-mask-color);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--el-fill-color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--el-border-color);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--el-border-color-light);
+} 

@@ -1,0 +1,51 @@
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: var(--el-color-bg);
+  --c-background-gray: #f9fafb;
+
+  --sidebar-width: 16rem; 
+  --sidebar-collapsed-width: 78px;
+}
+body {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", SimHei, SimSun, KaiTi, Arial, sans-serif;
+  --el-overlay-color-lighter: rgba(52, 61, 52, 0.5);
+  color: var(--el-text-color-primary);
+}
+
+.icons {
+  fill: currentColor;
+}
+
+.el-dialog {
+  .el-dialog__headerbtn .el-dialog__close {
+    color: var(--el-color-primary-light-2) !important;
+  }
+
+  .el-dialog__headerbtn .el-dialog__close:hover {
+    color: var(--el-color-primary-active) !important;
+    transform: scale(1.15);
+  }
+
+}
+
+
+
+// 表格样式
+.el-table {
+  --el-table-header-bg-color: var(--c-background-gray);
+  --el-table-border-color: var(--c-border-color);
+
+  .el-table__placeholder {
+    width: 0 !important;
+  }
+
+  th {
+    background-color: var(--c-background-gray) !important;
+    font-weight: 600;
+  }
+
+}

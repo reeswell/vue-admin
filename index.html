@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta property="og:title" content="vue-admin管理系统" />
+    <meta property="og:description" content="高效电子元器件后台管理系统" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://placehold.co/800x/667fff/ffffff.png?text=vue-admin+Image&font=Montserrat" />
+    <meta property="og:image:width" content="3800" />
+    <meta property="og:image:height" content="1900" />
+    <meta property="og:site_name" content="vue-admin" />
+    <title>vue-admin</title>
+    <style>
+      .loader {
+        display: block;
+        position: fixed;
+        z-index: 1031;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        border: solid 2px transparent;
+        border-top-color: #000;
+        border-left-color: #000;
+        border-bottom-color: #efefef;
+        border-right-color: #efefef;
+        border-radius: 50%;
+        animation: loader 400ms linear infinite;
+      }
+
+      @keyframes loader {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <div id="app">
+      <div class="loader"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
